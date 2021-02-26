@@ -7,9 +7,7 @@ import sys
 import os
 from os import environ
 
-# NOTE: I put my keys in the keys.py to separate them
-# from this main file.
-# Please refer to keys_format.py to see the format.
+
 CONSUMER_KEY = environ['CONSUMER_KEY']
 CONSUMER_SECRET = environ['CONSUMER_SECRET']
 ACCESS_KEY = environ['ACCESS_KEY']
@@ -22,10 +20,7 @@ api2 = twitter.Api(consumer_key=environ['consumer_key'],
 
 
 
-# NOTE: flush=True is just for running this script
-# with PythonAnywhere's always-on task.
-# More info: https://help.pythonanywhere.com/pages/AlwaysOnTasks/
-print('this is my twitter bot', flush=True)
+print('AAAAAAAAAAAAAAAAA', flush=True)
 
 auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
@@ -48,11 +43,7 @@ def store_last_seen_id(last_seen_id, file_name):
 
 def reply_to_tweets():
     print('retrieving and replying to tweets...', flush=True)
-    # DEV NOTE: use 1060651988453654528 for testing.
     last_seen_id = retrieve_last_seen_id(FILE_NAME)
-    # NOTE: We need to use tweet_mode='extended' below to show
-    # all full tweets (with full_text). Without it, long tweets
-    # would be cut off.
     mentions = api.mentions_timeline(
                         last_seen_id,
                         tweet_mode='extended')
@@ -64,7 +55,7 @@ def reply_to_tweets():
             print('found', flush=True)
             print('responding back...', flush=True)
 
-            x=random.randint(1,53)
+            x=random.randint(1,55)
             if x==1:
                 api2.PostUpdate('@' + mention.user.screen_name +' SISISISISI', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='sisi2.mp4')
             if x==2:
@@ -171,6 +162,10 @@ def reply_to_tweets():
                 api2.PostUpdate('@' + mention.user.screen_name, in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='baile3.mp4')
             if x==53:
                 api2.PostUpdate('@' + mention.user.screen_name +' vete', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='vete.mp4')
+            if x==54:
+                api2.PostUpdate('@' + mention.user.screen_name +' que tal?', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='que_tal.mp4')
+            if x==55:
+                api2.PostUpdate('@' + mention.user.screen_name +' MI AMOOORRR', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='amor2.mp4')
 
             try:
                 api.create_favorite(mention.id)
