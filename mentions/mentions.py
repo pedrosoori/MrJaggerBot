@@ -164,7 +164,7 @@ def reply_to_tweets():
             repo = g.get_user().get_repo("MrJaggerBot")
             file = repo.get_contents("/mentions/last_seen_id.txt")
 
-            repo.update_file(path=file.path, message="Update", content=last_seen_id, sha=file.sha)
+            repo.update_file(path=file.path, message="Update", content=str(last_seen_id), sha=file.sha)
 
             hora = datetime.now().hour
             minutes = datetime.now().minute
