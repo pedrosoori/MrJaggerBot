@@ -1,4 +1,4 @@
-iimport tweepy
+import tweepy
 import twitter
 import time
 import random
