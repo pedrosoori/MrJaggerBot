@@ -5,6 +5,8 @@ import random
 from datetime import datetime
 import sys
 import github
+import os
+from os import environ
 
 CONSUMER_KEY = environ['CONSUMER_KEY']
 CONSUMER_SECRET = environ['CONSUMER_SECRET']
