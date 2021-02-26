@@ -4,29 +4,28 @@ import time
 import random
 from datetime import datetime
 import sys
-import os
-from os import environ
+import github
 
+CONSUMER_KEY = 'o7lssun3q62CQbAT57m4inwv1'
+CONSUMER_SECRET = 'i80Jb9lfUgZT3I7JwzzXyjQ9TjSJtV71Z9nUnWrZ7cjZ2Stt7q'
+ACCESS_KEY = '1356760524290162691-miBvmfKQkQOMO5PNwYKD3oyB3nS7CM'
+ACCESS_SECRET = 'EoMcJWD0WCo9RKHesORK9QcbkDJppv8OL7HKshHRvQmfF'
 
-CONSUMER_KEY = environ['CONSUMER_KEY']
-CONSUMER_SECRET = environ['CONSUMER_SECRET']
-ACCESS_KEY = environ['ACCESS_KEY']
-ACCESS_SECRET = environ['ACCESS_SECRET']
+api2 = twitter.Api(consumer_key='o7lssun3q62CQbAT57m4inwv1',
+                  consumer_secret='i80Jb9lfUgZT3I7JwzzXyjQ9TjSJtV71Z9nUnWrZ7cjZ2Stt7q',
+                  access_token_key='1356760524290162691-miBvmfKQkQOMO5PNwYKD3oyB3nS7CM',
+                  access_token_secret='EoMcJWD0WCo9RKHesORK9QcbkDJppv8OL7HKshHRvQmfF')
 
-api2 = twitter.Api(consumer_key=environ['consumer_key'],
-                  consumer_secret=environ['consumer_secret'],
-                  access_token_key=environ['access_token_key'],
-                  access_token_secret=environ['access_token_secret'])
+g=github.Github(environ[correo], environ[contraseña])
 
-
-
-print('AAAAAAAAAAAAAAAAA', flush=True)
+print('this is my twitter bot', flush=True)
 
 auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
 api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
 
-FILE_NAME = 'last_seen_id.txt'
+#FILE_NAME = 'last_seen_id.txt'
+FILE_NAME = '1365263333436317699'
 
 
 def retrieve_last_seen_id(file_name):
@@ -161,6 +160,11 @@ def reply_to_tweets():
                     api2.PostUpdate('@' + mention.user.screen_name, in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='gruñir.mp4')
             except tweepy.TweepError as e:
                 print('Mensaje ya favorito.')
+                
+            repo = g.get_user().get_repo("MrJaggerBot")
+            file = repo.get_file_contents("/mentions/last_seen_id.txt")
+
+            repo.update_file("/mentions/last_seen_id.txt", "Update", "last_seen_id", file.sha)
 
             hora = datetime.now().hour
             minutes = datetime.now().minute
