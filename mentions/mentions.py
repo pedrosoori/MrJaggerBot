@@ -66,105 +66,105 @@ def reply_to_tweets():
 
             x=random.randint(1,50)
             if x==1:
-                api2.PostUpdate('@' + mention.user.screen_name +' SISISISISI', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='pedrosoori/MrJaggerBot/mentions/sisi2.mp4')
+                api2.PostUpdate('@' + mention.user.screen_name +' SISISISISI', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='sisi2.mp4')
             if x==2:
-                api2.PostUpdate('@' + mention.user.screen_name +' NONONONO', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='pedrosoori/MrJaggerBot/mentions/nono.mp4')
+                api2.PostUpdate('@' + mention.user.screen_name +' NONONONO', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='nono.mp4')
             if x==3:
-                api2.PostUpdate('@' + mention.user.screen_name +' JAJSJS SISISI', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='pedrosoori/MrJaggerBot/mentions/sisi.mp4')
+                api2.PostUpdate('@' + mention.user.screen_name +' JAJSJS SISISI', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='sisi.mp4')
             if x==4:
-                api2.PostUpdate('@' + mention.user.screen_name +' QUE TE CALLES', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='pedrosoori/MrJaggerBot/mentions/calles.mp4')
+                api2.PostUpdate('@' + mention.user.screen_name +' QUE TE CALLES', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='calles.mp4')
             if x==5:
-                api2.PostUpdate('@' + mention.user.screen_name +' CALLATE', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='pedrosoori/MrJaggerBot/mentions/callate.mp4')
+                api2.PostUpdate('@' + mention.user.screen_name +' CALLATE', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='callate.mp4')
             if x==6:
-                api2.PostUpdate('@' + mention.user.screen_name +' huevo :)', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='pedrosoori/MrJaggerBot/mentions/huevo.mp4')
+                api2.PostUpdate('@' + mention.user.screen_name +' huevo :)', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='huevo.mp4')
             if x==7:
-                api2.PostUpdate('@' + mention.user.screen_name +' eres asqueros@', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='pedrosoori/MrJaggerBot/mentions/asqueroso.mp4')
+                api2.PostUpdate('@' + mention.user.screen_name +' eres asqueros@', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='asqueroso.mp4')
             if x==8:
-                api2.PostUpdate('@' + mention.user.screen_name +' toma un platano ;)', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='pedrosoori/MrJaggerBot/mentions/platano.mp4')
+                api2.PostUpdate('@' + mention.user.screen_name +' toma un platano ;)', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='platano.mp4')
             if x==9:
-                api2.PostUpdate('@' + mention.user.screen_name +' A', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='pedrosoori/MrJaggerBot/mentions/A.mp4')
+                api2.PostUpdate('@' + mention.user.screen_name +' A', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='A.mp4')
             if x==10:
-                api2.PostUpdate('@' + mention.user.screen_name +' ;)', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='pedrosoori/MrJaggerBot/mentions/beso.mp4')
+                api2.PostUpdate('@' + mention.user.screen_name +' ;)', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='beso.mp4')
             if x==11:
-                api2.PostUpdate('@' + mention.user.screen_name +' no, no es lo mismo', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='pedrosoori/MrJaggerBot/mentions/pizza.mp4')
+                api2.PostUpdate('@' + mention.user.screen_name +' no, no es lo mismo', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='pizza.mp4')
             if x==12:
-                api2.PostUpdate('@' + mention.user.screen_name +' eres lindisim@', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='pedrosoori/MrJaggerBot/mentions/chupa.mp4')
+                api2.PostUpdate('@' + mention.user.screen_name +' eres lindisim@', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='chupa.mp4')
             if x==13:
-                api2.PostUpdate('@' + mention.user.screen_name +' me gusta la menta :)', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='pedrosoori/MrJaggerBot/mentions/menta.mp4')
+                api2.PostUpdate('@' + mention.user.screen_name +' me gusta la menta :)', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='menta.mp4')
             if x==14:
-                api2.PostUpdate('@' + mention.user.screen_name +' guap@s ;)', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='pedrosoori/MrJaggerBot/mentions/guapo.mp4')
+                api2.PostUpdate('@' + mention.user.screen_name +' guap@s ;)', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='guapo.mp4')
             if x==15:
-                api2.PostUpdate('@' + mention.user.screen_name +' un saludo', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='pedrosoori/MrJaggerBot/mentions/saludo.mp4')
+                api2.PostUpdate('@' + mention.user.screen_name +' un saludo', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='saludo.mp4')
             if x==16:
-                api2.PostUpdate('@' + mention.user.screen_name +' te dedico este baile', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='pedrosoori/MrJaggerBot/mentions/baile.mp4')
+                api2.PostUpdate('@' + mention.user.screen_name +' te dedico este baile', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='baile.mp4')
             if x==17:
-                api2.PostUpdate('@' + mention.user.screen_name +' fuera tont@', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='pedrosoori/MrJaggerBot/mentions/grita.mp4')
+                api2.PostUpdate('@' + mention.user.screen_name +' fuera tont@', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='grita.mp4')
             if x==18:
-                api2.PostUpdate('@' + mention.user.screen_name +' AAAAA', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='pedrosoori/MrJaggerBot/mentions/ira.mp4')
+                api2.PostUpdate('@' + mention.user.screen_name +' AAAAA', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='ira.mp4')
             if x==19:
-                api2.PostUpdate('@' + mention.user.screen_name +' te estaba preguntando', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='pedrosoori/MrJaggerBot/mentions/pregunta.mp4')
+                api2.PostUpdate('@' + mention.user.screen_name +' te estaba preguntando', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='pregunta.mp4')
             if x==20:
-                api2.PostUpdate('@' + mention.user.screen_name +' ERES UNA PESADILLA', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='pedrosoori/MrJaggerBot/mentions/pesadilla.mp4')
+                api2.PostUpdate('@' + mention.user.screen_name +' ERES UNA PESADILLA', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='pesadilla.mp4')
             if x==21:
-                api2.PostUpdate('@' + mention.user.screen_name +' eres tu', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='pedrosoori/MrJaggerBot/mentions/mierda.mp4')
+                api2.PostUpdate('@' + mention.user.screen_name +' eres tu', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='mierda.mp4')
             if x==22:
-                api2.PostUpdate('@' + mention.user.screen_name +' ven aqui', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='pedrosoori/MrJaggerBot/mentions/azote.mp4')
+                api2.PostUpdate('@' + mention.user.screen_name +' ven aqui', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='azote.mp4')
             if x==23:
-                api2.PostUpdate('@' + mention.user.screen_name +' que bueno soy', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='pedrosoori/MrJaggerBot/mentions/bueno.mp4')
+                api2.PostUpdate('@' + mention.user.screen_name +' que bueno soy', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='bueno.mp4')
             if x==24:
-                api2.PostUpdate('@' + mention.user.screen_name +' callate', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='pedrosoori/MrJaggerBot/mentions/callate.mp4')
+                api2.PostUpdate('@' + mention.user.screen_name +' callate', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='callate.mp4')
             if x==25:
-                api2.PostUpdate('@' + mention.user.screen_name +' estoy fumadisimo', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='pedrosoori/MrJaggerBot/mentions/fumado.mp4')
+                api2.PostUpdate('@' + mention.user.screen_name +' estoy fumadisimo', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='fumado.mp4')
             if x==26:
-                api2.PostUpdate('@' + mention.user.screen_name +' eres tont@', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='pedrosoori/MrJaggerBot/mentions/tonto.mp4')
+                api2.PostUpdate('@' + mention.user.screen_name +' eres tont@', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='tonto.mp4')
             if x==27:
-                api2.PostUpdate('@' + mention.user.screen_name +' v a m o s', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='pedrosoori/MrJaggerBot/mentions/vamos.mp4')
+                api2.PostUpdate('@' + mention.user.screen_name +' v a m o s', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='vamos.mp4')
             if x==28:
-                api2.PostUpdate('@' + mention.user.screen_name +' ah ah ah', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='pedrosoori/MrJaggerBot/mentions/ahah.mp4')
+                api2.PostUpdate('@' + mention.user.screen_name +' ah ah ah', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='ahah.mp4')
             if x==29:
-                api2.PostUpdate('@' + mention.user.screen_name +' uva', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='pedrosoori/MrJaggerBot/mentions/uva.mp4')
+                api2.PostUpdate('@' + mention.user.screen_name +' uva', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='uva.mp4')
             if x==30:
-                api2.PostUpdate('@' + mention.user.screen_name +' no se ve el agua', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='pedrosoori/MrJaggerBot/mentions/agua.mp4')
+                api2.PostUpdate('@' + mention.user.screen_name +' no se ve el agua', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='agua.mp4')
             if x==31:
-                api2.PostUpdate('@' + mention.user.screen_name +' te aplaudo', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='pedrosoori/MrJaggerBot/mentions/clap.mp4')
+                api2.PostUpdate('@' + mention.user.screen_name +' te aplaudo', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='clap.mp4')
             if x==32:
-                api2.PostUpdate('@' + mention.user.screen_name +' adios', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='pedrosoori/MrJaggerBot/mentions/adios.mp4')
+                api2.PostUpdate('@' + mention.user.screen_name +' adios', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='adios.mp4')
             if x==33:
-                api2.PostUpdate('@' + mention.user.screen_name +' que asco dais', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='pedrosoori/MrJaggerBot/mentions/asco.mp4')
+                api2.PostUpdate('@' + mention.user.screen_name +' que asco dais', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='asco.mp4')
             if x==34:
-                api2.PostUpdate('@' + mention.user.screen_name +' gracias y feliz navidad', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='pedrosoori/MrJaggerBot/mentions/gracias.mp4')
+                api2.PostUpdate('@' + mention.user.screen_name +' gracias y feliz navidad', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='gracias.mp4')
             if x==35:
-                api2.PostUpdate('@' + mention.user.screen_name +' no no tengo novia', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='pedrosoori/MrJaggerBot/mentions/novia.mp4')
+                api2.PostUpdate('@' + mention.user.screen_name +' no no tengo novia', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='novia.mp4')
             if x==36:
-                api2.PostUpdate('@' + mention.user.screen_name +' ah', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='pedrosoori/MrJaggerBot/mentions/a2.mp4')
+                api2.PostUpdate('@' + mention.user.screen_name +' ah', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='a2.mp4')
             if x==37:
-                api2.PostUpdate('@' + mention.user.screen_name +' soy enorme', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='pedrosoori/MrJaggerBot/mentions/gigante.mp4')
+                api2.PostUpdate('@' + mention.user.screen_name +' soy enorme', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='gigante.mp4')
             if x==38:
-                api2.PostUpdate('@' + mention.user.screen_name +' amor para todos', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='pedrosoori/MrJaggerBot/mentions/corazon.mp4')
+                api2.PostUpdate('@' + mention.user.screen_name +' amor para todos', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='corazon.mp4')
             if x==39:
-                api2.PostUpdate('@' + mention.user.screen_name +' DESPIERTA', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='pedrosoori/MrJaggerBot/mentions/dias.mp4')
+                api2.PostUpdate('@' + mention.user.screen_name +' DESPIERTA', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='dias.mp4')
             if x==40:
-                api2.PostUpdate('@' + mention.user.screen_name +' buenas noches princesa ;)', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='pedrosoori/MrJaggerBot/mentions/noches.mp4')
+                api2.PostUpdate('@' + mention.user.screen_name +' buenas noches princesa ;)', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='noches.mp4')
             if x==41:
-                api2.PostUpdate('@' + mention.user.screen_name +' hoy es noche de sexo', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='pedrosoori/MrJaggerBot/mentions/noches2.mp4')
+                api2.PostUpdate('@' + mention.user.screen_name +' hoy es noche de sexo', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='noches2.mp4')
             if x==42:
-                api2.PostUpdate('@' + mention.user.screen_name +' toma', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='pedrosoori/MrJaggerBot/mentions/baile2.mp4')
+                api2.PostUpdate('@' + mention.user.screen_name +' toma', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='baile2.mp4')
             if x==43:
-                api2.PostUpdate('@' + mention.user.screen_name +' has entendido?', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='pedrosoori/MrJaggerBot/mentions/entendido.mp4')
+                api2.PostUpdate('@' + mention.user.screen_name +' has entendido?', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='entendido.mp4')
             if x==44:
-                api2.PostUpdate('@' + mention.user.screen_name +' feliz navidad', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='pedrosoori/MrJaggerBot/mentions/navidad.mp4')
+                api2.PostUpdate('@' + mention.user.screen_name +' feliz navidad', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='navidad.mp4')
             if x==45:
-                api2.PostUpdate('@' + mention.user.screen_name +' asi asi', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='pedrosoori/MrJaggerBot/mentions/asi.mp4')
+                api2.PostUpdate('@' + mention.user.screen_name +' asi asi', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='asi.mp4')
             if x==46:
-                api2.PostUpdate('@' + mention.user.screen_name +' mi amor', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='pedrosoori/MrJaggerBot/mentions/amor.mp4')
+                api2.PostUpdate('@' + mention.user.screen_name +' mi amor', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='amor.mp4')
             if x==47:
-                api2.PostUpdate('@' + mention.user.screen_name, in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='pedrosoori/MrJaggerBot/mentions/cancion.mp4')
+                api2.PostUpdate('@' + mention.user.screen_name, in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='cancion.mp4')
             if x==48:
-                api2.PostUpdate('@' + mention.user.screen_name, in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='pedrosoori/MrJaggerBot/mentions/agradecido.mp4')
+                api2.PostUpdate('@' + mention.user.screen_name, in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='agradecido.mp4')
             if x==49:
-                api2.PostUpdate('@' + mention.user.screen_name +' hola', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='pedrosoori/MrJaggerBot/mentions/hola.mp4')
+                api2.PostUpdate('@' + mention.user.screen_name +' hola', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='hola.mp4')
             if x==50:
-                api2.PostUpdate('@' + mention.user.screen_name, in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='pedrosoori/MrJaggerBot/mentions/gruñir.mp4')
+                api2.PostUpdate('@' + mention.user.screen_name, in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='gruñir.mp4')
 
             try:
                 api.create_favorite(mention.id)
