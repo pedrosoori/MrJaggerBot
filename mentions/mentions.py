@@ -180,13 +180,8 @@ def reply_to_tweets():
 
             repo.update_file(path=file.path, message="Update", content=str(last_seen_id), sha=file.sha)
 
-            hora = datetime.now().hour
-            minutes = datetime.now().minute
-            if hora == 20 and minutes == 27:
-                sys.exit()
-
 while True:
     reply_to_tweets()
-    time.sleep(20)
+    time.sleep(10)
 
     
