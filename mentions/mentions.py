@@ -18,7 +18,7 @@ api2 = twitter.Api(consumer_key=environ['consumer_key'],
                   access_token_key=environ['access_token_key'],
                   access_token_secret=environ['access_token_secret'])
 
-g=github.Github(environ['correo'], environ['contrasena'])
+g=github.Github(environ[correo], environ[contrasena])
 
 print('this is my twitter bot', flush=True)
 
