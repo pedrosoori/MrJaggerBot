@@ -54,7 +54,7 @@ def reply_to_tweets():
             print('found', flush=True)
             print('responding back...', flush=True)
 
-            x=random.randint(1,50)
+            x=random.randint(1,55)
             if x==1:
                 api2.PostUpdate('@' + mention.user.screen_name +' SISISISISI', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='sisi2.mp4')
             if x==2:
@@ -155,6 +155,16 @@ def reply_to_tweets():
                 api2.PostUpdate('@' + mention.user.screen_name +' hola', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='hola.mp4')
             if x==50:
                 api2.PostUpdate('@' + mention.user.screen_name, in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='gruñir.mp4')
+            if x==51:
+                api2.PostUpdate('@' + mention.user.screen_name, in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='callate2.mp4')
+            if x==52:
+                api2.PostUpdate('@' + mention.user.screen_name, in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='baile3.mp4')
+            if x==53:
+                api2.PostUpdate('@' + mention.user.screen_name, in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='vete.mp4')
+            if x==54:
+                api2.PostUpdate('@' + mention.user.screen_name, in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='que_tal.mp4')
+            if x==55:
+                api2.PostUpdate('@' + mention.user.screen_name, in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='amor2.mp4')
 
             try:
                 api.create_favorite(mention.id)
