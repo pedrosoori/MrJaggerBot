@@ -26,9 +26,7 @@ auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
 api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
 
-#FILE_NAME = 'last_seen_id.txt'
-FILE_NAME = '1365263333436317699'
-
+FILE_NAME = 'last_seen_id.txt'
 
 def retrieve_last_seen_id(file_name):
     f_read = open(file_name, 'r')
