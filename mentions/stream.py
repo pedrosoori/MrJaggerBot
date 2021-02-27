@@ -82,7 +82,7 @@ while True:
         segundos-=minutos*60
         segundos=int(segundos)
 
-        api.update_post('@MisterJagger_ ACABA DE CERRAR STREAM. Duracion: %s horas %s minutos %s segundos' % (horas,minutos,segundos))
+        api.update_status('@MisterJagger_ ACABA DE CERRAR STREAM. Duracion: %s horas %s minutos %s segundos' % (horas,minutos,segundos))
         print('ACABA ACABA ACABA')
         y=0
         x=0
