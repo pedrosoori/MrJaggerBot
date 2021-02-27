@@ -2,6 +2,7 @@ import requests
 import time
 from twitchAPI.twitch import Twitch
 import twitter
+import tweepy
 from datetime import datetime
 import os
 from os import environ
