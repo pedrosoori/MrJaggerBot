@@ -54,6 +54,7 @@ while True:
     checkUser('pedrosoori')
     if checkUser('pedrosoori')==True and x==0:
         api2.PostUpdate(status='@MisterJagger_ ESTA EN DIRECTO EN TWITCH https://www.twitch.tv/jaggerprincesa')
+        print('EMPIEZA EMPIEZA EMPIEZA')
         arcinic=open(inicio,"w")
         hora=str(time.time())
         arcinic.write(str(hora))
@@ -71,7 +72,7 @@ while True:
         segundos=int(segundos)
 
         api2.PostUpdate(status='@MisterJagger_ ACABA DE CERRAR STREAM. Duracion: %s horas %s minutos %s segundos' % (horas,minutos,segundos))
-        print('adios. Duracion del streaming: %s horas %s minutos %s segundos' % (horas,minutos,segundos))
+        print('ACABA ACABA ACABA')
         y=0
         x=0
     time.sleep(10)
