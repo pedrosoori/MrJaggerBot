@@ -8,10 +8,20 @@ from os import environ
 
 print('hola')
 
+CONSUMER_KEY = environ['CONSUMER_KEY']
+CONSUMER_SECRET = environ['CONSUMER_SECRET']
+ACCESS_KEY = environ['ACCESS_KEY']
+ACCESS_SECRET = environ['ACCESS_SECRET']
+
 api2 = twitter.Api(consumer_key=environ['consumer_key'],
                   consumer_secret=environ['consumer_secret'],
                   access_token_key=environ['access_token_key'],
                   access_token_secret=environ['access_token_secret'])
+
+auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
+auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
+api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
+
 
 client_id = environ['client_id']
 client_secret = environ['client_secret']
@@ -53,7 +63,7 @@ y=0
 while True:
     checkUser('pedrosoori')
     if checkUser('pedrosoori')==True and x==0:
-        api2.PostUpdate(status='@MisterJagger_ ESTA EN DIRECTO EN TWITCH https://www.twitch.tv/jaggerprincesa')
+        api.update_status('@MisterJagger_ ESTA EN DIRECTO EN TWITCH https://www.twitch.tv/jaggerprincesa')
         print('EMPIEZA EMPIEZA EMPIEZA')
         arcinic=open(inicio,"w")
         hora=str(time.time())
@@ -71,7 +81,7 @@ while True:
         segundos-=minutos*60
         segundos=int(segundos)
 
-        api2.PostUpdate(status='@MisterJagger_ ACABA DE CERRAR STREAM. Duracion: %s horas %s minutos %s segundos' % (horas,minutos,segundos))
+        api.update_post('@MisterJagger_ ACABA DE CERRAR STREAM. Duracion: %s horas %s minutos %s segundos' % (horas,minutos,segundos))
         print('ACABA ACABA ACABA')
         y=0
         x=0
