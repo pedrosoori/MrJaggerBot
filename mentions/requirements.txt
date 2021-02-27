@@ -21,4 +21,4 @@ yarl==1.6.2
 python-twitter==3.5
 future==0.18.2
 PyGithub==1.54.1
-
+twitchAPI==2.2.5
