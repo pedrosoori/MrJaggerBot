@@ -172,9 +172,9 @@ def reply_to_tweets():
                 if x==57:
                     api2.PostUpdate('@' + mention.user.screen_name +' pringao', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='pringao.mp4')
                 if x==58:
-                    api2.PostUpdate('@' + mention.user.screen_name +' pringao', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='aaaa.mp4')
+                    api2.PostUpdate('@' + mention.user.screen_name, in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='aaaa.mp4')
                 if x==59:
-                    api2.PostUpdate('@' + mention.user.screen_name +' pringao', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='especifica.mp4')
+                    api2.PostUpdate('@' + mention.user.screen_name, in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='especifica.mp4')
             
             except tweepy.TweepError as e:
                 print('Mensaje ya favorito.')
