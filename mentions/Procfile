@@ -1,1 +1,1 @@
-worker: python mentions.py 
+worker: python mentions.py & python stream.py & wait -n
