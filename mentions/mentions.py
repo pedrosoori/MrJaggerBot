@@ -62,7 +62,7 @@ def reply_to_tweets():
                 status=api.show_friendship(source_screen_name=mention.user.screen_name, target_screen_name='MrJaggerBot')
                 status=status[0].following
                 if status==True:
-                    x=random.randint(1,66)
+                    x=random.randint(1,72)
                     if x==1:
                         api2.PostUpdate('@' + mention.user.screen_name +' SISISISISI', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='sisi2.mp4')
                     if x==2:
@@ -195,6 +195,18 @@ def reply_to_tweets():
                         api2.PostUpdate('@' + mention.user.screen_name +' ya vale no?', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='yavale.mp4')
                     if x==66:
                         api2.PostUpdate('@' + mention.user.screen_name +' sisisisi', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='sisi3.mp4')
+                    if x==67:
+                        api2.PostUpdate('@' + mention.user.screen_name, in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='armadura.mp4')
+                    if x==68:
+                        api2.PostUpdate('@' + mention.user.screen_name, in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='barres.mp4')
+                    if x==69:
+                        api2.PostUpdate('@' + mention.user.screen_name, in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='cagon.mp4')
+                    if x==70:
+                        api2.PostUpdate('@' + mention.user.screen_name, in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='encuentra.mp4')
+                    if x==71:
+                        api2.PostUpdate('@' + mention.user.screen_name, in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='siguiente.mp4')
+                    if x==72:
+                        api2.PostUpdate('@' + mention.user.screen_name, in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='sorbos.mp4')
                 if status==False:
                     api2.PostUpdate('@' + mention.user.screen_name +' solo funciono con seguidores, jodete.', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True')
                  
@@ -221,7 +233,7 @@ def reply_to_jagger():
                 api.create_favorite(tweets.id)
                 api.retweet(tweets.id)
                 
-                x=random.randint(1,59)
+                x=random.randint(1,72)
                 if x==1:
                     api2.PostUpdate('@' + tweets.user.screen_name +' SISISISISI', in_reply_to_status_id= tweets.id, auto_populate_reply_metadata= 'True', media='sisi2.mp4')
                 if x==2:
@@ -354,6 +366,18 @@ def reply_to_jagger():
                     api2.PostUpdate('@' + tweets.user.screen_name +' ya vale no?', in_reply_to_status_id= tweets.id, auto_populate_reply_metadata= 'True', media='yavale.mp4')
                 if x==66:
                     api2.PostUpdate('@' + tweets.user.screen_name +' sisisisi', in_reply_to_status_id= tweets.id, auto_populate_reply_metadata= 'True', media='sisi3.mp4')
+                if x==67:
+                    api2.PostUpdate('@' + tweets.user.screen_name, in_reply_to_status_id= tweets.id, auto_populate_reply_metadata= 'True', media='armadura.mp4')
+                if x==68:
+                    api2.PostUpdate('@' + tweets.user.screen_name, in_reply_to_status_id= tweets.id, auto_populate_reply_metadata= 'True', media='barres.mp4')
+                if x==69:
+                    api2.PostUpdate('@' + tweets.user.screen_name, in_reply_to_status_id= tweets.id, auto_populate_reply_metadata= 'True', media='cagon.mp4')
+                if x==70:
+                    api2.PostUpdate('@' + tweets.user.screen_name, in_reply_to_status_id= tweets.id, auto_populate_reply_metadata= 'True', media='encuentra.mp4')
+                if x==71:
+                    api2.PostUpdate('@' + tweets.user.screen_name, in_reply_to_status_id= tweets.id, auto_populate_reply_metadata= 'True', media='siguiente.mp4')
+                if x==72:
+                    api2.PostUpdate('@' + tweets.user.screen_name, in_reply_to_status_id= tweets.id, auto_populate_reply_metadata= 'True', media='sorbos.mp4')
 
                  
             except tweepy.TweepError as e:
@@ -379,7 +403,7 @@ def reply_to_ooc():
                 api.create_favorite(tweets2.id)
                 api.retweet(tweets2.id)
                 
-                x=random.randint(1,59)
+                x=random.randint(1,72)
                 if x==1:
                     api2.PostUpdate('@' + tweets2.user.screen_name +' SISISISISI', in_reply_to_status_id= tweets2.id, auto_populate_reply_metadata= 'True', media='sisi2.mp4')
                 if x==2:
@@ -512,6 +536,18 @@ def reply_to_ooc():
                     api2.PostUpdate('@' + tweets2.user.screen_name +' ya vale no?', in_reply_to_status_id= tweets2.id, auto_populate_reply_metadata= 'True', media='yavale.mp4')
                 if x==66:
                     api2.PostUpdate('@' + tweets2.user.screen_name +' sisisisi', in_reply_to_status_id= tweets2.id, auto_populate_reply_metadata= 'True', media='sisi3.mp4')
+                if x==67:
+                    api2.PostUpdate('@' + tweets2.user.screen_name, in_reply_to_status_id= tweets2.id, auto_populate_reply_metadata= 'True', media='armadura.mp4')
+                if x==68:
+                    api2.PostUpdate('@' + tweets2.user.screen_name, in_reply_to_status_id= tweets2.id, auto_populate_reply_metadata= 'True', media='barres.mp4')
+                if x==69:
+                    api2.PostUpdate('@' + tweets2.user.screen_name, in_reply_to_status_id= tweets2.id, auto_populate_reply_metadata= 'True', media='cagon.mp4')
+                if x==70:
+                    api2.PostUpdate('@' + tweets2.user.screen_name, in_reply_to_status_id= tweets2.id, auto_populate_reply_metadata= 'True', media='encuentra.mp4')
+                if x==71:
+                    api2.PostUpdate('@' + tweets2.user.screen_name, in_reply_to_status_id= tweets2.id, auto_populate_reply_metadata= 'True', media='siguiente.mp4')
+                if x==72:
+                    api2.PostUpdate('@' + tweets2.user.screen_name, in_reply_to_status_id= tweets2.id, auto_populate_reply_metadata= 'True', media='sorbos.mp4')
 
                  
             except tweepy.TweepError as e:
@@ -526,4 +562,4 @@ while True:
     reply_to_tweets()
     reply_to_jagger()
     reply_to_ooc()
-    time.sleep(10)
+    time.sleep(20)
