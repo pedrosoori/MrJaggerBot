@@ -60,7 +60,7 @@ def reply_to_tweets():
                 status=api.show_friendship(source_screen_name=mention.user.screen_name, target_screen_name='MrJaggerBot')
                 status=status[0].following
                 if status==True:
-                    x=random.randint(1,59)
+                    x=random.randint(1,65)
                     if x==1:
                         api2.PostUpdate('@' + mention.user.screen_name +' SISISISISI', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='sisi2.mp4')
                     if x==2:
@@ -179,6 +179,18 @@ def reply_to_tweets():
                         api2.PostUpdate('@' + mention.user.screen_name, in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='aaaa.mp4')
                     if x==59:
                         api2.PostUpdate('@' + mention.user.screen_name, in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='especifica.mp4')
+                    if x==60:
+                        api2.PostUpdate('@' + mention.user.screen_name +' asi asi', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='asiasi.mp4')
+                    if x==61:
+                        api2.PostUpdate('@' + mention.user.screen_name, in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='cantico.mp4')
+                    if x==62:
+                        api2.PostUpdate('@' + mention.user.screen_name +' membrillo', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='membrillo.mp4')
+                    if x==63:
+                        api2.PostUpdate('@' + mention.user.screen_name +' QUEEEEE', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='quee.mp4')
+                    if x==64:
+                        api2.PostUpdate('@' + mention.user.screen_name +' jajaja', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='risa.mp4')
+                    if x==65:
+                        api2.PostUpdate('@' + mention.user.screen_name +' ya vale no?', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='yavale.mp4')
                 if status==False:
                     api2.PostUpdate('@' + mention.user.screen_name +' solo funciono con seguidores, jodete.', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True')
                  
