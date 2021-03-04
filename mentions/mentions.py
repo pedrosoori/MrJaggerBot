@@ -58,7 +58,6 @@ def reply_to_tweets():
             print('responding back...', flush=True)
             try:
                 api.create_favorite(mention.id)
-                api2.PostUpdate('@' + mention.user.screen_name +' los bots de descarga de videos no funcionan conmigo, jodete.', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True')
             except tweepy.TweepError as e:
                 print('Mensaje ya favorito.')
                 
