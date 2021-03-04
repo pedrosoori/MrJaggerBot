@@ -55,7 +55,6 @@ def reply_to_tweets():
         
         if '@mrjaggerbot @this_vid' in mention.full_text.lower() or '@mrjaggerbot @downloadbot2' in mention.full_text.lower() or '@mrjaggerbot @downloaderbot' in mention.full_text.lower():
             print('BOT DE DESCARGA DE VIDEOS', flush=True)
-            print('responding back...', flush=True)
             try:
                 api.create_favorite(mention.id)
             except tweepy.TweepError as e:
@@ -221,7 +220,7 @@ def reply_to_tweets():
                     if x==72:
                         api2.PostUpdate('@' + mention.user.screen_name, in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='sorbos.mp4')
                 if status==False:
-                    api2.PostUpdate('@' + mention.user.screen_name +' solo funciono con seguidores, jodete.', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True')
+                    api2.PostUpdate('@' + mention.user.screen_name +' si quieres que te responda con un vídeo tienes que ser seguidor, jodete', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True')
                  
             except tweepy.TweepError as e:
                 print('Mensaje ya favorito.')
