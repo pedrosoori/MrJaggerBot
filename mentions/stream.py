@@ -62,8 +62,8 @@ def retrieve_inicio(inicio):
 x=0
 y=0
 while True:
-    checkUser('pedrosoori')
-    if checkUser('pedrosoori')==True and x==0:
+    checkUser('JaggerPrincesa')
+    if checkUser('JaggerPrincesa')==True and x==0:
         api.update_status('@MisterJagger_ ESTA EN DIRECTO EN TWITCH https://www.twitch.tv/jaggerprincesa')
         print('EMPIEZA EMPIEZA EMPIEZA')
         arcinic=open(inicio,"w")
@@ -72,7 +72,7 @@ while True:
         arcinic.close()
         x+=1
         y+=1
-    elif checkUser('pedrosoori')==False and y==1:
+    elif checkUser('JaggerPrincesa')==False and y==1:
         final=int(time.time())
         inicio=int(retrieve_inicio(inicio))
         segundos=final-inicio
