@@ -243,7 +243,7 @@ def reply_to_jagger():
             
             try:
                 api.create_favorite(tweets.id)
-                api.retweet(tweets.id)
+                #api.retweet(tweets.id)
                 
                 x=random.randint(1,72)
                 if x==1:
@@ -413,7 +413,7 @@ def reply_to_ooc():
             
             try:
                 api.create_favorite(tweets2.id)
-                api.retweet(tweets2.id)
+                #api.retweet(tweets2.id)
                 
                 x=random.randint(1,72)
                 if x==1:
