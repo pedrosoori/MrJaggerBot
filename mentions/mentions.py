@@ -43,7 +43,7 @@ def store_last_seen_id(last_seen_id, file_name):
     return
 
 def reply_to_tweets():
-    print('retrieving and replying to tweets...', flush=True)
+    #print('retrieving and replying to tweets...', flush=True)
     last_seen_id = retrieve_last_seen_id(FILE_NAME)
     mentions = api.mentions_timeline(
                         last_seen_id,
@@ -231,7 +231,7 @@ def reply_to_tweets():
             repo.update_file(path=file.path, message="Update", content=str(last_seen_id), sha=file.sha)
 
 def reply_to_jagger():
-    print('buscando ultimo tweet de MrJagger', flush=True)
+    #print('buscando ultimo tweet de MrJagger', flush=True)
     last_tweet = retrieve_last_seen_id(FILE_NAME2)
     tweet=api2.GetUserTimeline(screen_name='@MisterJagger_', count=1, include_rts=False, exclude_replies=True)
     for tweets in reversed(tweet):
@@ -401,7 +401,7 @@ def reply_to_jagger():
             repo.update_file(path=file2.path, message="Update", content=str(last_tweet), sha=file2.sha)            
 
 def reply_to_ooc():
-    print('buscando ultimo tweet de OOC', flush=True)
+    #print('buscando ultimo tweet de OOC', flush=True)
     last_tweet2 = retrieve_last_seen_id(FILE_NAME3)
     tweet2=api2.GetUserTimeline(screen_name='@OOC_Jagger', count=1, include_rts=False, exclude_replies=True)
     for tweets2 in reversed(tweet2):
