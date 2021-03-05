@@ -71,8 +71,8 @@ while True:
             hora=str(time.time())
             arcinic.write(str(hora))
             arcinic.close()
-            x+=1
-            y+=1
+            x=1
+            y=1
         elif checkUser('JaggerPrincesa')==False and y==1:
             final=int(time.time())
             inicio=int(retrieve_inicio(inicio))
@@ -89,6 +89,6 @@ while True:
             x=0
     except tweepy.TweepError as e:
         print('ERROR CON TWEEPY')
-        x+=1
-        y+=1
+        x=1
+        y=1
     time.sleep(10)
