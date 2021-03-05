@@ -63,27 +63,27 @@ x=0
 y=0
 while True:
     checkUser('JaggerPrincesa')
-    if checkUser('JaggerPrincesa')==True: #and x==0:
+    if checkUser('JaggerPrincesa')==True and x==0:
         api.update_status('@MisterJagger_ ESTA EN DIRECTO EN TWITCH https://www.twitch.tv/jaggerprincesa')
         print('EMPIEZA EMPIEZA EMPIEZA')
-        #arcinic=open(inicio,"w")
-        #hora=str(time.time())
-        #arcinic.write(str(hora))
-        #arcinic.close()
-        #x+=1
-        #y+=1
-    elif checkUser('JaggerPrincesa')==False:# and y==1:
-        #final=int(time.time())
-        #inicio=int(retrieve_inicio(inicio))
-        #segundos=final-inicio
-        #horas=int(segundos/3600)
-        #segundos-=horas*3600
-        #minutos=int(segundos/60)
-        #segundos-=minutos*60
-        #segundos=int(segundos)
+        arcinic=open(inicio,"w")
+        hora=str(time.time())
+        arcinic.write(str(hora))
+        arcinic.close()
+        x+=1
+        y+=1
+    elif checkUser('JaggerPrincesa')==False and y==1:
+        final=int(time.time())
+        inicio=int(retrieve_inicio(inicio))
+        segundos=final-inicio
+        horas=int(segundos/3600)
+        segundos-=horas*3600
+        minutos=int(segundos/60)
+        segundos-=minutos*60
+        segundos=int(segundos)
 
-        api.update_status('@MisterJagger_ ACABA DE CERRAR STREAM) #Duracion: %s horas %s minutos %s segundos' % (horas,minutos,segundos))
+        api.update_status('@MisterJagger_ ACABA DE CERRAR STREAM') #Duracion: %s horas %s minutos %s segundos' % (horas,minutos,segundos))
         print('ACABA ACABA ACABA')
-        #y=0
-        #x=0
+        y=0
+        x=0
     time.sleep(10)
