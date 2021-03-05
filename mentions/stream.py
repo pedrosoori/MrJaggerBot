@@ -65,6 +65,7 @@ while True:
     checkUser('pedrosoori')
     try:
         if checkUser('pedrosoori')==True and x==0:
+            print('EMPIEZA EMPIEZA EMPIEZA')
             api2.PostUpdate(status='@MisterJagger_ ESTA EN DIRECTO EN TWITCH https://www.twitch.tv/jaggerprincesa')
             arcinic=open(inicio,"w")
             hora=str(time.time())
@@ -83,7 +84,7 @@ while True:
             segundos=int(segundos)
 
             api2.PostUpdate(status='@MisterJagger_ ACABA DE CERRAR STREAM. Duracion: %s horas %s minutos %s segundos' % (horas,minutos,segundos))
-            print('adios. Duracion del streaming: %s horas %s minutos %s segundos' % (horas,minutos,segundos))
+            print('ACABA ACABA ACABA')
             y=0
             x=0
     except tweepy.TweepError as e:
