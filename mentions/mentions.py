@@ -573,5 +573,5 @@ def reply_to_ooc():
 while True:
     reply_to_tweets()
     reply_to_jagger()
-    reply_to_ooc()
+    #reply_to_ooc()
     time.sleep(20)
