@@ -562,7 +562,7 @@ def reply_to_ooc():
                     api2.PostUpdate('@' + tweets2.user.screen_name, in_reply_to_status_id= tweets2.id, auto_populate_reply_metadata= 'True', media='sorbos.mp4')
 
                  
-            except tweepy.TweepError as e:
+            except tweepy.TweepError or twitter.TwitterError as e:
                 print('Mensaje ya favorito.')
             
             repo = g.get_user().get_repo("MrJaggerBot")
