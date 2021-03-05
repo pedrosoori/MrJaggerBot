@@ -52,19 +52,8 @@ def reply_to_tweets():
         print(str(mention.id) + ' - ' + mention.full_text, flush=True)
         last_seen_id = mention.id
         store_last_seen_id(last_seen_id, FILE_NAME)
-        
-        if '@mrjaggerbot @this_vid' in mention.full_text.lower() or '@mrjaggerbot @downloadbot2' in mention.full_text.lower() or '@mrjaggerbot @downloaderbot' in mention.full_text.lower():
-            print('BOT DE DESCARGA DE VIDEOS', flush=True)
-            try:
-                api.create_favorite(mention.id)
-            except tweepy.TweepError as e:
-                print('Mensaje ya favorito.')
-                
-            repo = g.get_user().get_repo("MrJaggerBot")
-            file = repo.get_contents("/mentions/last_seen_id.txt")
-            repo.update_file(path=file.path, message="Update", content=str(last_seen_id), sha=file.sha)
-        
-        elif '@mrjaggerbot' in mention.full_text.lower():
+               
+        if '@mrjaggerbot' in mention.full_text.lower():
             print('found', flush=True)
             print('responding back...', flush=True)
 
@@ -225,10 +214,17 @@ def reply_to_tweets():
             except tweepy.TweepError as e:
                 print('Mensaje ya favorito.')
                 
-            repo = g.get_user().get_repo("MrJaggerBot")
-            file = repo.get_contents("/mentions/last_seen_id.txt")
+        elif '@mrjaggerbot @this_vid' in mention.full_text.lower() or '@mrjaggerbot @downloadbot2' in mention.full_text.lower() or '@mrjaggerbot @downloaderbot' in mention.full_text.lower():
+            print('BOT DE DESCARGA DE VIDEOS', flush=True)
+            try:
+                api.create_favorite(mention.id)
+            except tweepy.TweepError as e:
+                print('Mensaje ya favorito.')
+                
+        repo = g.get_user().get_repo("MrJaggerBot")
+        file = repo.get_contents("/mentions/last_seen_id.txt")
 
-            repo.update_file(path=file.path, message="Update", content=str(last_seen_id), sha=file.sha)
+        repo.update_file(path=file.path, message="Update", content=str(last_seen_id), sha=file.sha)
 
 def reply_to_jagger():
     #print('buscando ultimo tweet de MrJagger', flush=True)
