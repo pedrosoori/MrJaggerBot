@@ -74,7 +74,7 @@ def reply_to_tweets():
                 status=api.show_friendship(source_screen_name=mention.user.screen_name, target_screen_name='MrJaggerBot')
                 status=status[0].following
                 if status==True:
-                    x=random.randint(1,73)
+                    x=random.randint(1,75)
                     if x==1:
                         api2.PostUpdate('@' + mention.user.screen_name +' SISISISISI', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='sisi2.mp4')
                     if x==2:
@@ -221,6 +221,10 @@ def reply_to_tweets():
                         api2.PostUpdate('@' + mention.user.screen_name, in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='sorbos.mp4')
                     if x==73:
                         api2.PostUpdate('@' + mention.user.screen_name +' mira mi pinga', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='trapo.mp4')
+                    if x==74:
+                        api2.PostUpdate('@' + mention.user.screen_name +' eres tonto', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='tonto2.mp4')
+                    if x==75:
+                        api2.PostUpdate('@' + mention.user.screen_name, in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='tonto3.mp4')
                 if status==False:
                     api2.PostUpdate('@' + mention.user.screen_name +' solo funciono con seguidores, jodete.', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True')
                  
@@ -246,7 +250,7 @@ def reply_to_jagger():
                 api.create_favorite(tweets.id)
                 #api.retweet(tweets.id)
                 
-                x=random.randint(1,73)
+                x=random.randint(1,75)
                 if x==1:
                     api2.PostUpdate('@' + tweets.user.screen_name +' SISISISISI', in_reply_to_status_id= tweets.id, auto_populate_reply_metadata= 'True', media='sisi2.mp4')
                 if x==2:
@@ -393,6 +397,10 @@ def reply_to_jagger():
                     api2.PostUpdate('@' + tweets.user.screen_name, in_reply_to_status_id= tweets.id, auto_populate_reply_metadata= 'True', media='sorbos.mp4')
                 if x==73:
                     api2.PostUpdate('@' + tweets.user.screen_name +' mira mi pinga', in_reply_to_status_id= tweets.id, auto_populate_reply_metadata= 'True', media='trapo.mp4')
+                if x==74:
+                    api2.PostUpdate('@' + tweets.user.screen_name +' eres tonto', in_reply_to_status_id= tweets.id, auto_populate_reply_metadata= 'True', media='tonto2.mp4')
+                if x==75:
+                    api2.PostUpdate('@' + tweets.user.screen_name, in_reply_to_status_id= tweets.id, auto_populate_reply_metadata= 'True', media='tonto3.mp4')
 
                  
             except tweepy.TweepError as e:
@@ -418,7 +426,7 @@ def reply_to_ooc():
                 api.create_favorite(tweets2.id)
                 #api.retweet(tweets2.id)
                 
-                x=random.randint(1,73)
+                x=random.randint(1,75)
                 if x==1:
                     api2.PostUpdate('@' + tweets2.user.screen_name +' SISISISISI', in_reply_to_status_id= tweets2.id, auto_populate_reply_metadata= 'True', media='sisi2.mp4')
                 if x==2:
@@ -565,6 +573,10 @@ def reply_to_ooc():
                     api2.PostUpdate('@' + tweets2.user.screen_name, in_reply_to_status_id= tweets2.id, auto_populate_reply_metadata= 'True', media='sorbos.mp4')
                 if x==73:
                     api2.PostUpdate('@' + tweets2.user.screen_name +' mira mi pinga', in_reply_to_status_id= tweets2.id, auto_populate_reply_metadata= 'True', media='trapo.mp4')
+                if x==74:
+                    api2.PostUpdate('@' + tweets2.user.screen_name +' eres tonto', in_reply_to_status_id= tweets2.id, auto_populate_reply_metadata= 'True', media='tonto2.mp4')
+                if x==75:
+                    api2.PostUpdate('@' + tweets2.user.screen_name, in_reply_to_status_id= tweets2.id, auto_populate_reply_metadata= 'True', media='tonto3.mp4')
 
                  
             except tweepy.TweepError or twitter.TwitterError as e:
