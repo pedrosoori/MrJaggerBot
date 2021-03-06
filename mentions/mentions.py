@@ -226,8 +226,8 @@ def reply_to_tweets():
                     if x==75:
                         api2.PostUpdate('@' + mention.user.screen_name, in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True', media='tonto3.mp4')
                 if status==False:
-                    api2.PostUpdate('@' + mention.user.screen_name +' las menciones solo funcionan con seguidores.', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True')
-                 
+                    #api2.PostUpdate('@' + mention.user.screen_name +' las menciones solo funcionan con seguidores.', in_reply_to_status_id= mention.id, auto_populate_reply_metadata= 'True')
+                    api.create_favorite(mention.id)
             except tweepy.TweepError as e:
                 print('Mensaje ya favorito.')
                 
