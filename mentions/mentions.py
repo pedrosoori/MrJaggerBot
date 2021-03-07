@@ -64,7 +64,7 @@ def reply_to_tweets():
             file = repo.get_contents("/mentions/last_seen_id.txt")
             repo.update_file(path=file.path, message="Update", content=str(last_seen_id), sha=file.sha)
             
-        elif '@mrjaggerbot' in mention.full_text.lower():
+        elif '@mrjaggerbot' in mention.full_text.lower():# and len(mention.full_text.lower())==12 and mention.full_text.lower().find('@mrjaggerbot')
             print('found', flush=True)
             print('responding back...', flush=True)
 
