@@ -427,6 +427,14 @@ def reply_to_ibai():
                 #api.retweet(tweets.id)
                 
                 api2.PostUpdate('@' + tweets.user.screen_name, in_reply_to_status_id= tweets.id, auto_populate_reply_metadata= 'True', media='ibai.jpeg')
+                
+            except tweepy.TweepError as e:
+                print('Mensaje ya favorito.')
+            
+            repo = g.get_user().get_repo("MrJaggerBot")
+            file2 = repo.get_contents("/mentions/ibai.txt")
+
+            repo.update_file(path=file2.path, message="Update", content=str(last_tweet), sha=file2.sha)
 
 def reply_to_ooc():
     #print('buscando ultimo tweet de OOC', flush=True)
