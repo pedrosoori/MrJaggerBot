@@ -409,7 +409,24 @@ def reply_to_jagger():
             repo = g.get_user().get_repo("MrJaggerBot")
             file2 = repo.get_contents("/mentions/jagger.txt")
 
-            repo.update_file(path=file2.path, message="Update", content=str(last_tweet), sha=file2.sha)            
+            repo.update_file(path=file2.path, message="Update", content=str(last_tweet), sha=file2.sha)
+            
+def reply_to_jagger():
+    #print('buscando ultimo tweet de MrJagger', flush=True)
+    last_tweet = retrieve_last_seen_id(FILE_NAME2)
+    tweet=api2.GetUserTimeline(screen_name='@IbaiLlanos', count=1, include_rts=False, exclude_replies=True)
+    for tweets in reversed(tweet):
+        if last_tweet != tweets.id:
+            last_tweet = tweets.id
+            store_last_seen_id(last_tweet, FILE_NAME2)
+            print('jagger ha subido tweet')
+            print('respondiendo')
+            
+            try:
+                api.create_favorite(tweets.id)
+                #api.retweet(tweets.id)
+                
+                api2.PostUpdate('@' + tweets.user.screen_name, in_reply_to_status_id= tweets.id, auto_populate_reply_metadata= 'True', media='ibai.jpeg')
 
 def reply_to_ooc():
     #print('buscando ultimo tweet de OOC', flush=True)
