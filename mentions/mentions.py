@@ -29,6 +29,7 @@ api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
 FILE_NAME = 'last_seen_id.txt'
 FILE_NAME2= 'jagger.txt'
 FILE_NAME3= 'ooc.txt'
+FILE_NAME4 = 'ibai.txt'
 
 def retrieve_last_seen_id(file_name):
     f_read = open(file_name, 'r')
@@ -413,12 +414,12 @@ def reply_to_jagger():
             
 def reply_to_ibai():
     #print('buscando ultimo tweet de MrJagger', flush=True)
-    last_tweet = retrieve_last_seen_id(FILE_NAME2)
+    last_tweet = retrieve_last_seen_id(FILE_NAME4)
     tweet=api2.GetUserTimeline(screen_name='@IbaiLlanos', count=1, include_rts=False, exclude_replies=True)
     for tweets in reversed(tweet):
         if last_tweet != tweets.id:
             last_tweet = tweets.id
-            store_last_seen_id(last_tweet, FILE_NAME2)
+            store_last_seen_id(last_tweet, FILE_NAME4)
             print('ibai ha subido tweet')
             print('respondiendo')
             
