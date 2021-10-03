@@ -427,7 +427,13 @@ def reply_to_ibai():
                 api.create_favorite(tweets.id)
                 #api.retweet(tweets.id)
                 
-                api2.PostUpdate('@' + tweets.user.screen_name, in_reply_to_status_id= tweets.id, auto_populate_reply_metadata= 'True', media='ibai.jpeg')
+                x=random.randint(1,3)
+                if x==1:
+                    api2.PostUpdate('@' + tweets.user.screen_name, in_reply_to_status_id= tweets.id, auto_populate_reply_metadata= 'True', media='ibai.jpeg')
+                if x==2:
+                    api2.PostUpdate('@' + tweets.user.screen_name, in_reply_to_status_id= tweets.id, auto_populate_reply_metadata= 'True', media='ibai2.jpg')
+                if x==3:
+                    api2.PostUpdate('@' + tweets.user.screen_name, in_reply_to_status_id= tweets.id, auto_populate_reply_metadata= 'True', media='ibai3.jpg')
                 
             except tweepy.TweepError as e:
                 print('Mensaje ya favorito.')
