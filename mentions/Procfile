@@ -1,1 +1,1 @@
-worker: python hola.py
+worker: python mentions.py
